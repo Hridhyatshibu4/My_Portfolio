@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Use BASE_URL to specify the correct base URL -->
+    <link rel="icon" :href="`${BASE_URL}favicon.ico`">
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry, but My Portfolio doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app">
+      <!-- Navigation Bar -->
+      <nav class="navbar">
+        <ul>
+          <li><router-link to="/">Home</router-link></li>
+          <li><router-link to="/about-section">AboutSection</router-link></li>
+          <li><router-link to="/education-section">EducationSection</router-link></li>
+          <li><router-link to="/experience-section">ExperienceSection</router-link></li>
+          <li><router-link to="/skills-section">SkillsSection</router-link></li>
+          <li><router-link to="/volunteering-section">VolunteeringSection</router-link></li>
+          <li><router-link to="/certifications-section">CertificationsSection</router-link></li>
+          <li><router-link to="/contact-section">ConatctSection</router-link></li>
+         
+        </ul>
+      </nav>
+      
+      <!-- Vue App -->
+      <!-- The Vue app will inject the components here -->
+    </div>
+
+    <!-- Vue Components -->
+    <!-- Use BASE_URL to specify the correct base URL -->
+    <script :src="`${BASE_URL}js/chunk-vendors.js`"></script>
+    <script :src="`${BASE_URL}js/app.js`"></script>
+  </body>
+</html>
